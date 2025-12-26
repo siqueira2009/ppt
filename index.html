@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra - Papel - Tesoura</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+    <main>
+        <h1>Pedra, papel ou tesoura?</h1>
+        <p id="placar">0 - 0</p>
+        <div id="game">
+            <div id="opcoesJogador" class="opcoesDiv">
+                <p class="indicador">1️⃣ Você</p>
+                <p class="opcao" valor="rocha">✊</p>
+                <p class="opcao" valor="papel">🖐️</p>
+                <p class="opcao" valor="tesoura">✌️</p>
+            </div>
+            <button id="jogarBtn" disabled>OK!</button>
+            <div id="opcoesInimigo" class="opcoesDiv">    
+                <p class="indicador">2️⃣ Inimigo</p>            
+                <p class="opcao" valor="rocha">✊</p>
+                <p class="opcao" valor="papel">🖐️</p>
+                <p class="opcao" valor="tesoura">✌️</p>
+            </div>
+        </div>
+        
+        <hr>
+
+        <div id="results" class="noGame">
+            <h1 id="resultText">🍃 Não houve jogo ainda...</h1>
+            <button id="restartBtn" disabled onclick="recomecar()">Recomeçar</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js" crossorigin="anonymous"></script>
+    <script>
+        twemoji.parse(document.querySelector('*'), {
+            folder: 'svg',
+            ext: '.svg',
+            base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/'
+        });
+    </script>
+</body>
+</html>
