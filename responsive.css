@@ -1,3 +1,13 @@
+@media screen and (max-width: 400px) {
+    #indisponivel {
+        display: block;
+    }
+    
+    main {
+        display: none !important;
+    }
+}
+ 
 @media screen and (min-width: 400px) and (max-width: 600px) {
     main {
         width: 90%;

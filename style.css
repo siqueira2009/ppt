@@ -129,6 +129,20 @@ main hr {
     font-weight: 500;
 }
 
+#indisponivel {
+    display: none;
+    color: #fff;
+    text-align: center;
+}
+
+#indisponivel h1 {
+    font-weight: 600;
+}
+
+#indisponivel h3 {
+    font-weight: 500;
+}
+
 img.emoji {
     height: 1.2em;
     width: 1.2em;
